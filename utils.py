@@ -16,7 +16,7 @@ def generate_motivational_quote(mood: str, api_key: str) -> str:
     genai.configure(api_key=api_key)
 
     # Select the appropriate model (using gemini-1.5-pro as requested)
-    model = genai.GenerativeModel('gemini-1.5-pro')
+    model = genai.GenerativeModel('gemini-1.5')
     
     # Create prompt based on mood
     if mood == "General (No specific mood)":
